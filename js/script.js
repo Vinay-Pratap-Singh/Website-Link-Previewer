@@ -3,18 +3,16 @@
     let title = document.querySelector("#title");
     let description = document.querySelector("#description");
     let image = document.querySelector("#image");
-    let website = document.querySelector("#weblink");
+    let weblink = document.querySelector("#weblink");
 
     
     url.addEventListener("submit", (event) => {
       event.preventDefault();
-      // console.log(inputBox.value);
       let website = inputBox.value;
 
-      let response = fetch(`http://api.linkpreview.net/?key=2de5a75d6cb4b9c3347edaf2f786b3e5&q=${website}`)
+      let response = fetch(`https://api.linkpreview.net/?key=2de5a75d6cb4b9c3347edaf2f786b3e5&q=${website}`)
       .then((response) => response.json())
       .then((data) => {
-          console.log(data)
 
           title.innerHTML = data.title;
 
@@ -27,7 +25,7 @@
             image.src = data.image;
           }
 
-          website.href = data.url;
+          weblink.href = data.url;
       });
 
     });
