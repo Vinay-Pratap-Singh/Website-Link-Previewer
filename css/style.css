@@ -158,3 +158,12 @@ body{
 #website-section button:active{
     background-color: #7cd68f;
 }
+
+/* Responsive Design Code */
+@media only screen and (max-width: 550px) {
+    .card{
+        height: 550px;
+        width: 350px;
+        padding: 35px;
+    }
+}
