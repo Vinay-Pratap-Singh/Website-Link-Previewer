@@ -24,7 +24,7 @@ body{
     padding: 25px;
     border-radius: 40px;
     background-color: #cecfd2;
-    box-shadow: 13px 13px 20px #817f7f,-13px -13px 20px #fff;
+    box-shadow: 13px 13px 13px #817f7f,-13px -13px 13px #fff;
 }
 
 .urlform{
@@ -87,6 +87,7 @@ body{
     border-radius: 25px;
     box-shadow: inset 5px 5px 5px #98999a, inset -5px -5px 5px #fff;
     font-size: 0.7rem;
+    overflow: auto;
 }
 
 #title{

@@ -4,13 +4,16 @@
     let description = document.querySelector("#description");
     let image = document.querySelector("#image");
     let weblink = document.querySelector("#weblink");
-
+    let website = '';
     
     url.addEventListener("submit", (event) => {
       event.preventDefault();
-      let website = inputBox.value;
-
-      let response = fetch(`https://api.linkpreview.net/?key=2de5a75d6cb4b9c3347edaf2f786b3e5&q=${website}`)
+      if(inputBox.value == ""){
+        alert("Please enter the website link");
+      }
+      else{
+        website = inputBox.value;
+        let response = fetch(`https://api.linkpreview.net/?key=2de5a75d6cb4b9c3347edaf2f786b3e5&q=${website}`)
       .then((response) => response.json())
       .then((data) => {
 
@@ -39,5 +42,6 @@
             weblink.href = data.url;
           }
       });
-
+      }
+      
     });
