@@ -14,9 +14,19 @@
       .then((response) => response.json())
       .then((data) => {
 
-          title.innerHTML = data.title;
+          if(data.title == ""){
+            title.innerHTML = "Title is not available";
+          }
+          else{
+            title.innerHTML = data.title;
+          }
 
-          description.innerHTML = data.description;
+          if(data.description == ""){
+            description.innerHTML = "Description is not available";
+          }
+          else{
+            description.innerHTML = data.description;
+          }
 
           if(data.image == ""){
             image.alt = "Image is not available";
@@ -25,7 +35,9 @@
             image.src = data.image;
           }
 
-          weblink.href = data.url;
+          if(data.url != ""){
+            weblink.href = data.url;
+          }
       });
 
     });

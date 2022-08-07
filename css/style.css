@@ -3,21 +3,28 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: Montserrat;
 }
 
 body{
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
+    font-family: "Montserrat";
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #555;
+    background-color: #dedbdb;
 }
 
 .card{
-    height: 550px;
-    width: 400px;
-    border: 5px solid black;
-    padding: 20px;
+    height: 520px;
+    width: 430px;
+    padding: 25px;
+    border-radius: 40px;
+    background-color: #cecfd2;
+    box-shadow: 13px 13px 20px #817f7f,-13px -13px 20px #f5f5f5;
 }
 
 .urlform{
@@ -28,15 +35,41 @@ body{
 
 #input-box{
     width: 70%;
-    padding: 5px 10px;
-    border: 1.5px solid black;
-    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #555;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 5px #98999a, inset -5px -5px 5px #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 
 #btn{
-    padding: 5px 20px;
-    border: 1.5px solid black;
-    border-radius: 20px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #03bacb;
+    box-shadow: 5px 5px 5px #b1b1b1, -5px -5px 5px #eae7e7;
+    transition: all 0.5s;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+#btn:hover{
+    background-color: #44c59e;
+    box-shadow: 5px 5px 5px #eae7e7, -5px -5px 5px #b1b1b1;
+}
+
+#btn:active{
+    background-color: #7cd68f;
 }
 
 .title-section{
@@ -44,10 +77,23 @@ body{
 }
 
 #title, #description{
-    height: 25px;
-    padding: 5px 10px;
-    border: 1.5px solid black;
-    border-radius: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: #555;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 5px #98999a, inset -5px -5px 5px #fff;
+    font-size: 0.7rem;
+}
+
+#title{
+    height: 45px;
+    font-size: 0.9rem;
+}
+
+.description-section{
     margin: 10px 0;
 }
 
@@ -55,11 +101,24 @@ body{
     height: 100px;
 }
 
+.card h4{
+    margin-bottom: 10px;
+}
+
+.image-section{
+    margin: 10px 0;
+}
+
 #image{
-    margin-top: 10px;
-    height: 180px;
     width: 100%;
-    border: 1.5px solid black;
+    height: 100px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #555;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 5px #98999a, inset -5px -5px 5px #fff;
 }
 
 #website-section{
@@ -72,10 +131,30 @@ body{
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
+    color: #fff;
 }
 
 #website-section button{
-    padding: 5px 20px;
-    border: 1.5px solid black;
-    border-radius: 20px;
+    margin-top: 10px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #03bacb;
+    box-shadow: 5px 5px 5px #b1b1b1, -5px -5px 5px #eae7e7;
+    transition: all 0.5s;
+}
+
+#website-section button:hover{
+    background-color: #44c59e;
+    box-shadow: 5px 5px 5px #eae7e7, -5px -5px 5px #b1b1b1;
+}
+
+#website-section button:active{
+    background-color: #7cd68f;
 }
